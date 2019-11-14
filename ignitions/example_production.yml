@@ -1,0 +1,11 @@
+- name:  setup example production server
+  hosts: example_production
+  sudo:  true
+
+  vars:
+    common_path: ../common
+    role_path:   ../example_production
+
+  roles:
+    - ../roles/example_production
+
